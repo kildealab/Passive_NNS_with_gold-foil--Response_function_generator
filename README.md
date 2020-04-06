@@ -6,9 +6,9 @@ This is a Monte-Carlo simulation application based on GEANT4 [1] to generate the
 * [Author](#author)
 * [Prerequisites](#Prerequisites)
 * [Features](#Features)
-* [Program structure](#Program structure)
-* [Getting started](#Getting started)
-* [Author's notes](#Author's notes)
+* [Program structure](#Program-structure)
+* [Getting started](#Getting-started)
+* [Author's notes](#Author's-notes)
 * [License](#license)
 * [References](#References)
 
@@ -17,7 +17,7 @@ Felix Mathew
 Contact email: felix.mathew@mail.mcgill.ca
 
 ## Prerequisites
-* Geant4.10.04.p02 ( See [the installation guide](http://geant4-userdoc.web.cern.ch/geant4-userdoc/UsersGuides/InstallationGuide/BackupVersions/V10.4/html/index.html) to install Geant4)
+- Geant4.10.04.p02 ( See [the installation guide](http://geant4-userdoc.web.cern.ch/geant4-userdoc/UsersGuides/InstallationGuide/BackupVersions/V10.4/html/index.html) to install Geant4)
 
 
 ## Features:
