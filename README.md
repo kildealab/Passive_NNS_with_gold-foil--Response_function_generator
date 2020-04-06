@@ -1,6 +1,8 @@
 # Passive_NNS_with_gold-foil---Response_functions_generator
 This is a Monte-Carlo simulation application based on GEANT4 [1] to generate the system response functions of a passive Nested Neutron Spectrometer (NNS) [2]. Passive NNS consists of seven cylindrical HDPE moderator shells and a gold-foil as a thermal neutron detector. The gold-foil is positioned at the geometrical centre of the moderators in a horizontal disposition using two cylindrical inserts. This spectrometer can be used to measure the neutron flux spectra but the spectrometer response functions are essential to unfold the neutron fulx spectra from the measurements [3,4]. This application will enable the passive NNS user to generate the system response functions. 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3742354.svg)](https://doi.org/10.5281/zenodo.3742354)
+
 ## Table of Contents
 
 * [Author](#author)
