@@ -1,0 +1,15 @@
+/run/initialize
+/gps/particle neutron #particle
+/gps/ene/type Mono    #energy type 
+
+## to set the source as a Cylinder with an isotropic fluence 
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/centre 0 0 0 cm
+/gps/pos/radius 4.2501 cm
+/gps/pos/halfz 3.72501 cm
+/gps/ang/type cos
+
+
+
+/control/foreach run.mac Ekin "1.12E-09 1.59E-09 2.51E-09 0.000000004 6.31E-09 0.00000001 1.59E-08 2.51E-08 3.98E-08 6.31E-08 0.0000001 0.000000159 0.000000251 0.000000398 0.000000631 0.000001 0.00000159 0.00000251 0.00000398 0.00000631 0.00001 0.0000159 0.0000251 0.0000398 0.0000631 0.0001 0.000159 0.000251 0.000398 0.000631 0.001 0.00159 0.00251 0.00398 0.00631 0.01 0.0159 0.0251 0.0398 0.0631 0.1 0.159 0.251 0.398 0.631 1 1.59 2.51 3.98 6.31 10 15.9"
