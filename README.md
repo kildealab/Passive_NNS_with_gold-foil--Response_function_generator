@@ -15,7 +15,7 @@ This is a Monte-Carlo simulation application based on GEANT4 [1] to generate the
 * [References](#References)
 
 ## Author
-Felix Mathew
+Felix Mathew\
 Contact email: felix.mathew@mail.mcgill.ca
 
 ## Prerequisites
