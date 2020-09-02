@@ -25,18 +25,18 @@ nCellFluxScorer::~nCellFluxScorer()
    {;}
 
 G4bool nCellFluxScorer::ProcessHits(G4Step* aStep,G4TouchableHistory*)
-{ 
+{
   if (aStep->GetTrack()->GetDefinition()!= G4Neutron::Definition() ) return FALSE; // returns if the particle is no a neutron
-  
+
   G4double stepLength = aStep->GetStepLength();
   if ( stepLength == 0. ) return FALSE;
 
   G4int idx = ((G4TouchableHistory*)(aStep->GetPreStepPoint()->GetTouchable()))->GetReplicaNumber(indexDepth);
-  
-  G4double cubicVolume = ComputeVolume(aStep, idx)*0.001; //multiplied with 0.001 to make the unit cm3. The value is return as mm3 by default. 
 
-  G4double CellFlux = stepLength / cubicVolume;
-  CellFlux *= aStep->GetPreStepPoint()->GetWeight(); 
+  G4double cubicVolume = ComputeVolume(aStep, idx)*0.001; //multiplied with 0.001 to make the unit cm3. The value is return as mm3 by default.
+
+  G4double CellFlux = (stepLength*0.1) / cubicVolume; //multiplied with 0.1 to make the unit cm. The value of stepLength is return in mm by default.
+  CellFlux *= aStep->GetPreStepPoint()->GetWeight();
   G4int index = GetIndex(aStep);
   EvtMap->add(index,CellFlux);
 
@@ -63,12 +63,12 @@ void nCellFluxScorer::DrawAll()
 void nCellFluxScorer::PrintAll()
 {
   G4cout << " MultiFunctionalDet  " << detector->GetName() << G4endl;
-  G4cout << " PrimitiveScorer " << GetName() <<G4endl; 
+  G4cout << " PrimitiveScorer " << GetName() <<G4endl;
   G4cout << " Number of entries " << EvtMap->entries() << G4endl;
   std::map<G4int,G4double*>::iterator itr = EvtMap->GetMap()->begin();
   for(; itr != EvtMap->GetMap()->end(); itr++) {
     G4cout << "  copy no.: " << itr->first
-	   << "  cell flux : " << *(itr->second)/GetUnitValue() 
+	   << "  cell flux : " << *(itr->second)/GetUnitValue()
 	   << " [" << GetUnit() << "]"
 	   << G4endl;
   }
@@ -95,6 +95,6 @@ G4double nCellFluxScorer::ComputeVolume(G4Step* aStep, G4int idx){
   { // for ordinary volume
     solid = physVol->GetLogicalVolume()->GetSolid();
   }
-  
+
   return solid->GetCubicVolume();
 }
