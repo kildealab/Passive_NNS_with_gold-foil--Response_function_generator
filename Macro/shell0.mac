@@ -1,13 +1,13 @@
 /run/initialize
 /gps/particle neutron #particle
-/gps/ene/type Mono    #energy type 
+/gps/ene/type Mono    #energy type
 
-## to set the source as a Cylinder with an isotropic fluence 
+## to set the source as a Cylinder with an isotropic fluence
 /gps/pos/type Surface
 /gps/pos/shape Cylinder
-/gps/pos/centre 0 0 0 cm
+/gps/pos/centre 0 0 -1.275 cm
 /gps/pos/radius 0.801 cm
-/gps/pos/halfz 0.00501 cm
+/gps/pos/halfz 1.27501 cm
 /gps/ang/type cos
 
 
