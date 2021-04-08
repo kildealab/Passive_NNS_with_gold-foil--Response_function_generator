@@ -70,7 +70,8 @@ The region corresponding to the gold-foil is assigned as the sensitive detector 
 This project is provided under the MIT license. See the [LICENSE file](LICENSE) for more info.
 
 ## References:
-[1] Apostolakis J, Wright DH, Geant4 collaboration. An Overview of the Geant4 Toolkit. AIP Conference Proceedings. 2007. [https://doi.org/10.1063/1.2720452](https://doi.org/10.1063/1.2720452). \
-[2] Dubeau J, Hakmana Witharana SS, Atanackovic J, Yonkeu A, Archambault JP. A neutron spectrometer using nested moderators. Radiation Protection Dosimetry. 2012. pp. 217–222. [https://doi.org/10.1093/rpd/ncr381](https://doi.org/10.1093/rpd/ncr381). \
-[3] L. Montgomery, M. Evans, L. Liang, R. Maglieri, J. Kildea, "The effect of the flattening filter on photoneutron production at 10 MV in the Varian TrueBeam linear accelerator," *Med Phys*. 2018. [http://dx.doi.org/10.1002/mp.13148](http://dx.doi.org/10.1002/mp.13148). \
-[4] R. Maglieri, A. Licea, M. Evans, J. Seuntjens, J. Kildea, "Measuring neutron spectra in radiotherapy using the nested neutrono spectrometer," *Med Phys*. 2015. [https://dx.doi.org/10.1118/1.4931963](https://dx.doi.org/10.1118/1.4931963). 
+[1] Mathew, Felix, et al. "Development of a passive gold-foil Nested Neutron Spectrometer to validate the active current-mode He-3 measurements in a high neutron fluence rate radiotherapy environment." Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 985 (2021): 164662. [https://doi.org/10.1016/j.nima.2020.164662] (https://doi.org/10.1016/j.nima.2020.164662).\
+[2] Apostolakis J, Wright DH, Geant4 collaboration. An Overview of the Geant4 Toolkit. AIP Conference Proceedings. 2007. [https://doi.org/10.1063/1.2720452](https://doi.org/10.1063/1.2720452). \
+[3] Dubeau J, Hakmana Witharana SS, Atanackovic J, Yonkeu A, Archambault JP. A neutron spectrometer using nested moderators. Radiation Protection Dosimetry. 2012. pp. 217–222. [https://doi.org/10.1093/rpd/ncr381](https://doi.org/10.1093/rpd/ncr381). \
+[4] L. Montgomery, M. Evans, L. Liang, R. Maglieri, J. Kildea, "The effect of the flattening filter on photoneutron production at 10 MV in the Varian TrueBeam linear accelerator," *Med Phys*. 2018. [http://dx.doi.org/10.1002/mp.13148](http://dx.doi.org/10.1002/mp.13148). \
+[5] R. Maglieri, A. Licea, M. Evans, J. Seuntjens, J. Kildea, "Measuring neutron spectra in radiotherapy using the nested neutrono spectrometer," *Med Phys*. 2015. [https://dx.doi.org/10.1118/1.4931963](https://dx.doi.org/10.1118/1.4931963). 
